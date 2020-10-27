@@ -1,24 +1,215 @@
 @import 'vars.less';
 
 /*Спецификации*/
-.clearfix:after
-{
-	content: " ";
-	display: table;
-	width: 100%;
+.clearfix:after {
+    content: " ";
+    display: table;
+    width: 100%;
 }
 
-body
-{
+body {
     font-family: @font;
 }
+
 /*------------------------------------------------------------------------*/
 
 
 // header
-header
-{
+header {
     min-height: 735px;
     background: url('../../img/header_bg.png') no-repeat center center / cover;
+    padding-top: 60px;
+
+    .top_line {
+        display: flex;
+        margin-bottom: 80px;
+
+        .top_line_logo {
+            width: 70%;
+        }
+
+        .top_line_social {
+            width: 30%;
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-left: 20px;
+
+                a {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+
+            .top_line_social_item_1 {
+                position: relative;
+
+                &::before {
+                    content: "\f111";
+                    font: normal normal normal 14px/1 FontAwesome;
+                    position: absolute;
+                    color: #fff;
+                    font-size: 5px;
+                    top: 14px;
+                    left: -10px;
+                }
+            }
+
+            .top_line_social_item_2 {
+                position: relative;
+
+                &::before {
+                    content: "\f111";
+                    font: normal normal normal 14px/1 FontAwesome;
+                    position: absolute;
+                    color: #fff;
+                    font-size: 5px;
+                    top: 14px;
+                    left: -10px;
+                }
+
+                &::after {
+                    content: "\f111";
+                    font: normal normal normal 14px/1 FontAwesome;
+                    position: absolute;
+                    color: #fff;
+                    font-size: 5px;
+                    top: 15px;
+                    right: -11px;
+                }
+            }
+
+        }
+    }
+
+
+    .header_content {
+        display: flex;
+        .header_content_item {
+            width: 50%;
+
+            h1 {
+                color: @pink;
+                font-weight: 700;
+                font-size: 92px;
+                font-family: @font_decor;
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: 55px;
+                font-weight: 700;
+                color: #fff;
+                // width: 50%;
+                margin-bottom: 60px;
+            }
+
+            h4
+            {
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+
+        .header_content_item_img
+        {
+            margin-top: -20px;
+        }
+    }
 }
+
 // end header
+
+
+
+
+
+
+
+
+
+// Media
+@media screen and(max-width: 1200px)
+{
+    header .header_content .header_content_item h1
+    {
+        font-size: 83px;
+    }
+
+    header .header_content .header_content_item h4
+    {
+        font-size: 17px;
+    }
+}
+
+
+@media screen and(max-width: 992px)
+{
+    header
+    {
+        min-height: auto;
+    }
+    header .header_content .header_content_item
+    {
+        width: 100%;
+    }
+
+    header .header_content
+    {
+        flex-direction: column;
+    }
+
+    header .header_content .header_content_item_img
+    {
+        margin-top: 0;
+    }
+}
+
+@media screen and(max-width: 756px)
+{
+    header .top_line .top_line_logo {
+        width: 58%;
+    }
+}
+
+
+@media screen and(max-width: 576px)
+{
+
+
+    header .top_line
+    {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    header .top_line .top_line_social span
+    {
+        margin-left: 0;
+    }
+    header .top_line .top_line_logo {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    header .top_line .top_line_social
+    {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    header .header_content .header_content_item h1
+    {
+        font-size: 50px;
+    }
+
+    header .header_content .header_content_item h3
+    {
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+}
