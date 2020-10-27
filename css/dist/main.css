@@ -1,0 +1,14 @@
+/*Спецификации*/
+.clearfix:after {
+  content: " ";
+  display: table;
+  width: 100%;
+}
+body {
+  font-family: 'Manrope', sans-serif;
+}
+/*------------------------------------------------------------------------*/
+header {
+  min-height: 735px;
+  background: url('../../img/header_bg.png') no-repeat center center / cover;
+}
