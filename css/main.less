@@ -11,6 +11,12 @@ body {
     font-family: @font;
 }
 
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
 /*------------------------------------------------------------------------*/
 
 
@@ -88,6 +94,7 @@ header {
 
     .header_content {
         display: flex;
+
         .header_content_item {
             width: 50%;
 
@@ -107,15 +114,13 @@ header {
                 margin-bottom: 60px;
             }
 
-            h4
-            {
+            h4 {
                 font-size: 18px;
                 color: #fff;
             }
         }
 
-        .header_content_item_img
-        {
+        .header_content_item_img {
             margin-top: -20px;
         }
     }
@@ -127,89 +132,146 @@ header {
 
 
 
+// block_2
+.block_2 {
+    margin-bottom: 90px;
+
+    .block_2_content {
+        .block_item {
+            h2 {
+                font-size: 32px;
+                margin-bottom: 50px;
+            }
+
+            .block_2_button {
+                display: inline-block;
+                border-radius: 30px;
+                background: url('../../img/block_2_but_bg.png') no-repeat center center / cover;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: translateX(10px);
+                    transition: all 0.3s;
+                }
+
+                a {
+                    padding: 15px 50px;
+                    display: block;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 25px;
+
+
+                }
+            }
+
+
+        }
+
+        .block_2_item_img {
+            margin-top: -5px !important;
+        }
+
+        .block_2_item_content {
+            padding-top: 40px;
+        }
+    }
+}
+
+// end block_2
+
+
+
+
+
 
 
 
 
 // Media
-@media screen and(max-width: 1200px)
-{
-    header .header_content .header_content_item h1
-    {
+@media screen and(max-width: 1200px) {
+    header .header_content .header_content_item h1 {
         font-size: 83px;
     }
 
-    header .header_content .header_content_item h4
-    {
+    header .header_content .header_content_item h4 {
         font-size: 17px;
+    }
+
+    .block_2 .block_2_content .block_item h2 {
+        font-size: 28px;
     }
 }
 
 
-@media screen and(max-width: 992px)
-{
-    header
-    {
+@media screen and(max-width: 992px) {
+    header {
         min-height: auto;
     }
-    header .header_content .header_content_item
-    {
+
+    header .header_content .header_content_item {
         width: 100%;
     }
 
-    header .header_content
-    {
+    header .header_content {
         flex-direction: column;
     }
 
-    header .header_content .header_content_item_img
-    {
+    header .header_content .header_content_item_img {
         margin-top: 0;
     }
 }
 
-@media screen and(max-width: 756px)
-{
+@media screen and(max-width: 756px) {
     header .top_line .top_line_logo {
         width: 58%;
     }
 }
 
 
-@media screen and(max-width: 576px)
-{
+@media screen and(max-width: 576px) {
 
 
-    header .top_line
-    {
+    header .top_line {
         flex-direction: column;
         margin-bottom: 40px;
     }
 
-    header .top_line .top_line_social span
-    {
+    header .top_line .top_line_social span {
         margin-left: 0;
     }
+
     header .top_line .top_line_logo {
         text-align: center;
         width: 100%;
         margin-bottom: 30px;
     }
 
-    header .top_line .top_line_social
-    {
+    header .top_line .top_line_social {
         justify-content: space-around;
         width: 100%;
     }
 
-    header .header_content .header_content_item h1
-    {
+    header .header_content .header_content_item h1 {
         font-size: 50px;
     }
 
-    header .header_content .header_content_item h3
-    {
+    header .header_content .header_content_item h3 {
         font-size: 40px;
         margin-bottom: 35px;
     }
+}
+
+
+@media screen and(max-width: 400px) {
+    .block_2 .block_2_content .block_item h2 {
+        font-size: 25px;
+    }
+
+    .block_2 .block_2_content .block_item .block_2_button a
+    {
+        padding: 14px 16px;
+        font-size: 23px;
+    }
+
 }
