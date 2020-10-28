@@ -141,6 +141,7 @@ header .header_content .header_content_item_img {
   font-size: 18px;
 }
 .block_3 .block_3_content .block_3_item {
+  background-color: #fff;
   width: 30%;
   min-height: 380px;
   padding: 30px;
@@ -188,6 +189,15 @@ header .header_content .header_content_item_img {
   font-size: 22px;
   font-weight: 700;
 }
+.block_3 .block_3_content .block_3_bg .block_3_wrap {
+  position: relative;
+}
+.block_3 .block_3_content .block_3_bg .block_3_wrap img {
+  position: absolute;
+  z-index: -1;
+  bottom: -70px;
+  left: -100px;
+}
 @media screen and (max-width: 1200px) {
   header .header_content .header_content_item h1 {
     font-size: 83px;
@@ -222,6 +232,9 @@ header .header_content .header_content_item_img {
 @media screen and (max-width: 756px) {
   header .top_line .top_line_logo {
     width: 58%;
+  }
+  .block_3 .block_3_content .block_3_bg .block_3_wrap img {
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {
