@@ -12,6 +12,14 @@ $(document).ready(function() {https://clck.ru/F5MdE
 });
 
 
+$('.grid').masonry({
+	// options...
+	itemSelector: '.block_3_item',
+	columnWidth: '.block_3_item',
+	gutter: 10
+  });
+
+
 $(document).ready(function() {
     $(".fancybox").fancybox({
     	    "imageScale"            : false,
