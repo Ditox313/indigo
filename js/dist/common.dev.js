@@ -64,3 +64,25 @@ $(".link").on("click", function (e) {
 $(document).ready(function () {
   new WOW().init();
 });
+$(document).ready(function () {
+  $('.count_num_1').countTo({
+    from: 0,
+    to: 112,
+    speed: 9000
+  });
+  $('.count_num_2').countTo({
+    from: 0,
+    to: 97,
+    speed: 9000
+  });
+  $('.count_num_3').countTo({
+    from: 0,
+    to: 35,
+    speed: 9000
+  });
+  $('.count_num_4').countTo({
+    from: 0,
+    to: 44,
+    speed: 9000
+  });
+});
