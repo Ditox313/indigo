@@ -386,6 +386,67 @@ header .header_content .header_content_item_img {
   text-decoration: none;
   font-size: 25px;
 }
+footer {
+  min-height: 1200px;
+  background: -webkit-linear-gradient(90deg, #4139e0 36%, #a177f9);
+  background: -moz-linear-gradient(90deg, #4139e0 36%, #a177f9);
+  background: linear-gradient(90deg, #4139e0 36%, #a177f9);
+  padding: 140px 0;
+}
+footer .footer_title {
+  margin-bottom: 120px;
+}
+footer .footer_title h2 {
+  color: #fff;
+}
+footer .footer_logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+footer .footer_logos .logos_item {
+  width: 16%;
+}
+footer .callToAction {
+  width: 760px;
+  margin: 0 auto;
+}
+footer .callToAction h3 {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+footer .callToAction p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+footer .callToAction .footer_social_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+footer .callToAction .footer_social_list .social_list_icon {
+  margin: 0 30px;
+}
+footer .callToAction .footer_logo {
+  margin-top: 120px;
+  text-align: center;
+}
+.but_up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 80px;
+  cursor: pointer;
+  color: #2625C7;
+}
 @media screen and (max-width: 1200px) {
   header .header_content .header_content_item h1 {
     font-size: 83px;
@@ -435,6 +496,14 @@ header .header_content .header_content_item_img {
   .block_5 .block_5_content .block_5_item {
     width: 100%;
   }
+  footer .footer_logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footer_logos .logos_item {
+    width: 30%;
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   header .top_line .top_line_logo {
@@ -444,6 +513,21 @@ header .header_content .header_content_item_img {
     display: none;
   }
   .block_4 .block_4_content .block_4_item {
+    width: 100%;
+  }
+  footer .footer_logos .logos_item {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  footer .footer_logos {
+    flex-direction: column;
+  }
+  footer .footer_title h2 {
+    width: 100%;
+    text-align: center;
+  }
+  footer .callToAction {
     width: 100%;
   }
 }
@@ -476,6 +560,11 @@ header .header_content .header_content_item_img {
   }
   .block_3 .block_3_title h2 {
     font-size: 34px;
+  }
+  .but_up {
+    bottom: 25px;
+    right: 25px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -514,5 +603,14 @@ header .header_content .header_content_item_img {
     color: #fff;
     text-decoration: none;
     font-size: 17px;
+  }
+  footer .footer_title h2 {
+    font-size: 36px;
+  }
+  footer .callToAction h3 {
+    font-size: 18px;
+  }
+  footer .callToAction p {
+    font-size: 18px;
   }
 }
