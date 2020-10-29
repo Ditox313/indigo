@@ -439,6 +439,14 @@ footer .callToAction .footer_logo {
   margin-top: 120px;
   text-align: center;
 }
+footer .callToAction .footer_arrow_mod {
+  position: relative;
+}
+footer .callToAction .footer_arrow_mod img {
+  position: absolute;
+  right: -30px;
+  bottom: -140px;
+}
 .but_up {
   position: fixed;
   bottom: 50px;
@@ -503,6 +511,13 @@ footer .callToAction .footer_logo {
   footer .footer_logos .logos_item {
     width: 30%;
     margin-bottom: 30px;
+  }
+  footer .callToAction .footer_arrow_mod img {
+    display: none;
+  }
+  .block_7 .block_7_content_list .block_7_content_text h3 {
+    font-size: 26px;
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 768px) {

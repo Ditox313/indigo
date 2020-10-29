@@ -11,7 +11,6 @@ $(document).ready(function () {
   });
 });
 $('.grid').masonry({
-  // options...
   itemSelector: '.block_3_item',
   columnWidth: '.six',
   gutter: 10,
