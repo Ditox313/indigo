@@ -13,8 +13,9 @@ $(document).ready(function () {
 $('.grid').masonry({
   // options...
   itemSelector: '.block_3_item',
-  columnWidth: '.block_3_item',
-  gutter: 10
+  columnWidth: '.six',
+  gutter: 10,
+  horizontalOrder: true
 });
 $(document).ready(function () {
   $(".fancybox").fancybox({
