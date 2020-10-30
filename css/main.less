@@ -818,6 +818,51 @@ footer {
 
 
 
+// portfolio_buttons
+.portfolio_buttons
+{
+    
+    i
+    {
+        font-size: 50px;
+        color: #111; 
+    }
+
+    .portfolio_right
+    {
+        position: fixed;
+        top: 50%;
+        right: 30px;
+        padding: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover
+        {
+            transform: translateX(10px);
+            transition: all 0.3s;
+        }
+    }
+
+    .portfolio_left
+    {
+        position: fixed;
+        top: 50%;
+        left: 30px;
+        padding: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover
+        {
+            transform: translateX(-10px);
+            transition: all 0.3s;
+        }
+    }
+}
+// end portfolio_buttons
+
+
 
 
 
@@ -858,6 +903,16 @@ footer {
 
     .block_6 {
         margin-top: 90px;
+    }
+
+    .portfolio_buttons .portfolio_right
+    {
+        right: 10px;
+    }
+
+    .portfolio_buttons .portfolio_left
+    {
+        left: 10px;
     }
 }
 
@@ -1092,7 +1147,15 @@ footer {
 
 
     
+    .portfolio_buttons .portfolio_right
+    {
+        display: none;
+    }
 
+    .portfolio_buttons .portfolio_left
+    {
+        display: none;
+    }
    
 
 

@@ -533,6 +533,34 @@ footer .callToAction .footer_arrow_mod img {
 .block_5_portfolio {
   margin: 90px 0;
 }
+.portfolio_buttons i {
+  font-size: 50px;
+  color: #111;
+}
+.portfolio_buttons .portfolio_right {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.portfolio_buttons .portfolio_right:hover {
+  transform: translateX(10px);
+  transition: all 0.3s;
+}
+.portfolio_buttons .portfolio_left {
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.portfolio_buttons .portfolio_left:hover {
+  transform: translateX(-10px);
+  transition: all 0.3s;
+}
 @media screen and (max-width: 1260px) {
   .portfolio_block_2 .portfolio_block_2_main .portfolio_block_2_img_big .port_img_big_circle {
     display: none;
@@ -559,6 +587,12 @@ footer .callToAction .footer_arrow_mod img {
   }
   .block_6 {
     margin-top: 90px;
+  }
+  .portfolio_buttons .portfolio_right {
+    right: 10px;
+  }
+  .portfolio_buttons .portfolio_left {
+    left: 10px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -716,6 +750,12 @@ footer .callToAction .footer_arrow_mod img {
   .portfolio_block_4 .portfolio_block_3_content h2 {
     font-size: 22px;
     margin-top: 80px;
+  }
+  .portfolio_buttons .portfolio_right {
+    display: none;
+  }
+  .portfolio_buttons .portfolio_left {
+    display: none;
   }
 }
 @media screen and (max-width: 400px) {
