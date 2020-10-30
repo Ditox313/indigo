@@ -752,10 +752,13 @@ footer .callToAction .footer_arrow_mod img {
     margin-top: 80px;
   }
   .portfolio_buttons .portfolio_right {
-    display: none;
+    display: none !important;
   }
   .portfolio_buttons .portfolio_left {
-    display: none;
+    display: none !important;
+  }
+  .portfolio_block_4 .portfolio_block_3_content_2 h3 {
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 400px) {
